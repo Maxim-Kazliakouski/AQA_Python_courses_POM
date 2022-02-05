@@ -5,7 +5,7 @@ import time
 
 class Test_for_cart_page:
     class Test_positive:
-        def test_user_on_cart_page(self, browser):
+        def test_user_on_cart_page(self, clearing_results_folder, browser):
             """
             This case checks, that user gets to the cart page
             """

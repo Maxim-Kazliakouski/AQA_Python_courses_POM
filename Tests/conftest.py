@@ -8,6 +8,7 @@ from configparser import ConfigParser
 from selenium.webdriver.chrome.service import Service
 from webdrivermanager import ChromeDriverManager
 import os
+
 sys.path.insert(0, '/Volumes/Work/Python_courses/Project/POM')
 
 
@@ -48,11 +49,15 @@ def pytest_addoption(parser):
     #                  help='Choose language: ru, en...(etc)')
 
 
-@pytest.fixture(scope='class')
-def browser(request):
+@pytest.fixture(scope='session')
+def clearing_results_folder():
     print('\nClearing results folder...')
     time.sleep(2)
     os.system("rm -rf /Volumes/MacOS/Users/maxkazliakouski/.jenkins/workspace/POM_tests/allure-results/*")
+
+
+@pytest.fixture(scope='class')
+def browser(request):
     browser_name = request.config.getoption('browser.name')
     headless = request.config.getoption('headmode')
     # opt = Options()
