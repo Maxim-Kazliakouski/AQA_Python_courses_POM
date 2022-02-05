@@ -50,9 +50,9 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope='class')
 def browser(request):
-    # print('\nClearing results folder...')
-    # time.sleep(2)
-    # os.system("rm -rf results/*")
+    print('\nClearing results folder...')
+    time.sleep(2)
+    os.system("rm -rf /Volumes/MacOS/Users/maxkazliakouski/.jenkins/workspace/POM_tests/allure-results/*")
     browser_name = request.config.getoption('browser.name')
     headless = request.config.getoption('headmode')
     # opt = Options()
