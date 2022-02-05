@@ -1,6 +1,5 @@
 from Tests.Tests_for_cart_page.data_cart_page import TestData
 from Pages.Cart_page import CartPage
-import time
 
 
 class Test_for_cart_page:

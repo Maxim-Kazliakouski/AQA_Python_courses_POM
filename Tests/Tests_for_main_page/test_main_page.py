@@ -1,6 +1,5 @@
 from Tests.Tests_for_main_page.data_main_page import TestData
 from Pages.Main_page import MainPage
-import time
 
 
 class Test_for_main_page:

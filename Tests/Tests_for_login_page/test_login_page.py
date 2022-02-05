@@ -1,6 +1,5 @@
 from Pages.Login_page import LoginPage
 from Tests.Tests_for_login_page.data_login_page import TestData
-import time
 
 
 class Test_for_login_page:
@@ -13,7 +12,6 @@ class Test_for_login_page:
             page = LoginPage(browser, link)
             page.open_page(TestData.LOGIN_URL)
             login_page = page.getting_current_url()
-            time.sleep(2)
             assert login_page == TestData.LOGIN_URL, "User isn't on login page"
 
         def test_redirection_from_login_to_cart_page(self, browser):
@@ -25,7 +23,6 @@ class Test_for_login_page:
             page = LoginPage(browser, link)
             page.open_page(TestData.LOGIN_URL)
             page.redirection_to_the_cart_page()
-            time.sleep(2)
             cart_page = page.getting_current_url()
             assert cart_page == TestData.CART_PAGE_URL, "User isn't on cart page"
 

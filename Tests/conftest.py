@@ -1,14 +1,10 @@
 import sys
 import time
-import traceback
 import pytest
 import logging
 from selenium import webdriver
-from configparser import ConfigParser
 from selenium.webdriver.chrome.service import Service
-from webdrivermanager import ChromeDriverManager
 import os
-
 sys.path.insert(0, '/Volumes/Work/Python_courses/Project/POM')
 
 

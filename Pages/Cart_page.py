@@ -1,10 +1,5 @@
-import time
-from selenium.webdriver.common.by import By
-import sys
 from Pages.Base_page import BasePage
 from Locators.Cart_page_locators import CartPageLocators as cart_page_locators
-from Tests.Tests_for_cart_page.data_cart_page import TestData
-sys.path.insert(0, '/Volumes/Work/Python_courses/Project/POM')
 
 
 class CartPage(BasePage):
