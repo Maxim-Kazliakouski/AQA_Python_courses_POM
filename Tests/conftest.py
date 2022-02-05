@@ -42,7 +42,7 @@ def logs():
 def pytest_addoption(parser):
     parser.addoption('--browser.name', action='store', default='chrome',
                      help="Choose browser: chrome or safari")
-    parser.addoption('--headmode', action='store', default='false',
+    parser.addoption('--headmode', action='store', default='true',
                      help='Choose turn on or turn off headless mode')
     # parser.addoption('--language', action='store', default=None,
     #                  help='Choose language: ru, en...(etc)')

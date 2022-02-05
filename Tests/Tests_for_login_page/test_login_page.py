@@ -3,7 +3,7 @@ from Tests.Tests_for_login_page.data_login_page import TestData
 import time
 
 
-class Test_for_main_page:
+class Test_for_login_page:
     class Test_positive:
         def test_user_on_login_page(self, browser):
             """

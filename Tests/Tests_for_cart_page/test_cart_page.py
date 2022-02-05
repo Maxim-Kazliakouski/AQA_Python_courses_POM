@@ -3,7 +3,7 @@ from Pages.Cart_page import CartPage
 import time
 
 
-class Test_for_main_page:
+class Test_for_cart_page:
     class Test_positive:
         def test_user_on_cart_page(self, browser):
             """
