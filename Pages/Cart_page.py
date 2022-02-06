@@ -8,13 +8,13 @@ class CartPage(BasePage):
         return current_url
 
     def redirection_to_the_login_page(self):
-        login_button = self.browser.find_element(*cart_page_locators.LOGIN_BUTTON)
+        login_button = self.search_element(cart_page_locators.LOGIN_BUTTON)
         login_button.click()
 
     def redirection_to_the_main_page(self):
-        main_logo_button = self.browser.find_element(*cart_page_locators.MAIN_LOGO_BUTTON)
+        main_logo_button = self.search_element(cart_page_locators.MAIN_LOGO_BUTTON)
         main_logo_button.click()
 
     def checking_cart(self):
-        is_there_goods = self.browser.find_element(*cart_page_locators.EMPTY_CART).text
+        is_there_goods = self.search_element(cart_page_locators.EMPTY_CART).text
         return is_there_goods
