@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.0, pytest-6.2.5, py-1.11.0, pluggy-1.0.0 -- /Volumes/Work/Python_courses/Project/POM/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Volumes/Work/Python_courses/Project/POM
+collecting ... collected 12 items
+
+Tests/Tests_for_cart_page/test_cart_page.py::Test_for_cart_page::Test_positive::test_user_on_cart_page PASSED [  8%]
+Tests/Tests_for_cart_page/test_cart_page.py::Test_for_cart_page::Test_positive::test_redirection_from_cart_to_main_page PASSED [ 16%]
+Tests/Tests_for_cart_page/test_cart_page.py::Test_for_cart_page::test_checking_empty_cart PASSED [ 25%]
+Tests/Tests_for_cart_page/test_cart_page.py::Test_for_cart_page::test_redirection_from_cart_to_login_page PASSED [ 33%]
+Tests/Tests_for_login_page/test_login_page.py::Test_for_login_page::Test_positive::test_user_on_login_page PASSED [ 41%]
+Tests/Tests_for_login_page/test_login_page.py::Test_for_login_page::Test_positive::test_redirection_from_login_to_cart_page PASSED [ 50%]
+Tests/Tests_for_login_page/test_login_page.py::Test_for_login_page::Test_positive::test_checking_empty_cart PASSED [ 58%]
+Tests/Tests_for_login_page/test_login_page.py::Test_for_login_page::Test_positive::test_redirection_from_login_to_main_page PASSED [ 66%]
+Tests/Tests_for_main_page/test_main_page.py::Test_for_main_page::Test_positive::test_user_on_main_page PASSED [ 75%]
+Tests/Tests_for_main_page/test_main_page.py::Test_for_main_page::Test_positive::test_redirection_from_main_to_cart_page PASSED [ 83%]
+Tests/Tests_for_main_page/test_main_page.py::Test_for_main_page::Test_positive::test_checking_empty_cart PASSED [ 91%]
+Tests/Tests_for_main_page/test_main_page.py::Test_for_main_page::Test_positive::test_redirection_from_main_to_login_page PASSED [100%]
+
+============================= 12 passed in 52.36s ==============================
