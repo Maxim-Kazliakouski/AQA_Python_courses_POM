@@ -1,6 +1,5 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Locators.Main_page_locators import MainPageLocators as main_page_locators
 
 
 class BasePage:
